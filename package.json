@@ -1,0 +1,22 @@
+{
+  "name": "github_api",
+  "version": "1.0.0",
+  "description": "search repositories using github api",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/razuvaevcr/test_GH_API.git"
+  },
+  "keywords": [
+    "API"
+  ],
+  "author": "razuvaev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/razuvaevcr/test_GH_API/issues"
+  },
+  "homepage": "https://github.com/razuvaevcr/test_GH_API#readme"
+}

@@ -1,0 +1,112 @@
+/* *, *::before, *::after { box-sizing: border-box; } */
+
+.app { padding: 25px; }
+
+.title { text-align: center; }
+
+.search-line {
+    flex-direction: column;
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+}
+.search-input {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex: 1;
+    margin-bottom: 10px;
+    height: 40px;
+    line-height: 20px;
+    padding: 8px 15px;
+}
+.repos-wrapper {
+    padding: 0;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.repos {
+    align-items: flex-start;
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.repo {
+    padding-left: 100px;
+    width: 50%;
+}
+
+.repo-prev {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+    margin: 10px;
+    padding: 0;
+    text-align: center;
+    width: calc(100% / 5 - 20px);
+}
+
+.repo-name {
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.repo-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+.repo-list-item {
+    margin: 5px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.paginator {
+    display: flex;
+    justify-content: center;
+}
+
+.page {
+    background-color: #D3D3D3;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 40px;
+    line-height: 40px;
+    margin: 15px 15px;
+    width: 30px;
+    text-align: center;
+}
+.active {
+    background-color: #00BFFF;
+}
+.data_wrapper {
+    padding: 20px 700px;
+    
+}
+.repo-data {
+    display: flex;
+    justify-content: start;
+}
+.stars{
+    padding: 0 40px;
+}
+.photo {
+    width: 300px;
+    height: 300px;
+}
+.login {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+.contreb {
+    text-decoration: none;
+    color: black;
+}
