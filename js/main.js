@@ -40,16 +40,19 @@ class View { // класс отвечающий за отображение эл
         repoElement.addEventListener('click', () => {
             localStorage.setItem('array', JSON.stringify(repoData));
             window.location.href = 'repo.html';
-            /* document.getElementsByClassName('text').innerHTML = repoData.name */
         }
         );
         repoElement.innerHTML = `
             <span class='repo-name'>Name: [${repoData.name}]</span>
             <span class='repo-stars'>Stars: [${repoData.stargazers_count}]</span>
-            <span class='repo-commit-date'>Last commit: [${repoData.pushed_at}]</span>
+            <span class='repo-commit-date'>Last commit: [${this.getDate(repoData.pushed_at)}]</span>
             <span class='repo-url'>url:[${repoData.url}]</span>
         `;
         this.reposList.append(repoElement);
+    }
+    getDate(commitDate) {
+        let date = new Date(Date.parse(commitDate));
+        return date;
     }
     createPages(repoInfo){
         let pageCount = repoInfo.total_count / REPO_PER_PAGE;

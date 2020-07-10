@@ -8,7 +8,7 @@ if (!array.description) {
 document.querySelector('.repo-data').innerHTML = `
     <div class="name">Repo name: ${array.name}</div>
     <div class="stars">Stars: ${array.stargazers_count}</div>
-    <div class="commit">Last commit at: ${array.pushed_at}</div>
+    <div class="commit">Last commit at: ${new Date(Date.parse(array.pushed_at))}</div>
 `;
 document.querySelector('.repo-photo').innerHTML = `
     <div>Photo: </div>

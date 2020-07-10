@@ -4,7 +4,8 @@
   "description": "search repositories using github api",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "index.html"
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,6 @@
   "bugs": {
     "url": "https://github.com/razuvaevcr/test_GH_API/issues"
   },
-  "homepage": "https://github.com/razuvaevcr/test_GH_API#readme"
+  "homepage": "https://github.com/razuvaevcr/test_GH_API#readme",
+  "dependencies": {}
 }
